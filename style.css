@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: inline-flex;
+  }
+  
+  .navbar ul li {
+    margin: 0 20px;
+    margin-top: 40px;
+  }
+  
+  .navbar ul li a {
+    color: gray;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px; /* Jarak antar huruf */
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: #f39c12;
+  }
+.main-title{
+    margin-top: 150px;
+    margin-left: 50px;
+    color: white;
+    font-size: 8rem;
+}
+.info-title{
+    color:white;
+    margin-left: 50px;
+    margin-top:25px;
+    padding-right:150px;
+}
