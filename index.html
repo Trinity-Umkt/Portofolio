@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Trinity</title>
 </head>
-
+<script src="js/whatsapp.js"></script>
 <body>
     <canvas id="starsCanvas"></canvas>
     <nav class="navbar">
@@ -19,39 +19,34 @@
     </nav>
     <p class="main-title">Trinity</p>
     <p class="motto"></p>
-    <h2 class="info-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ad dicta ratione et, a pariatur!
-        Incidunt voluptatem numquam quos illo quod expedita iusto sed! Tenetur accusantium sint illum rerum autem, atque
-        itaque consectetur, nisi nobis eos dolore cupiditate at iste ipsum ex mollitia distinctio delectus dolores
-        consequuntur modi voluptatem deleniti! Reiciendis rerum maxime repellendus fuga error odit cumque, earum
-        molestias sunt alias eligendi quam. Dolor blanditiis, eos perferendis magni deserunt explicabo ea consequuntur a
-        tempora est sunt voluptatibus repellendus corrupti, doloremque ipsum atque odio deleniti? Error assumenda
-        similique sequi minima omnis ea doloribus voluptatem repudiandae, laboriosam sit repellat eveniet impedit..</h2>
+    <h2 class="info-title"> Trinity adalah sebuah tim yang terdiri dari individu dengan latar belakang yang berbeda-beda, namun memiliki tujuan yang sama untuk berkarya dan berinovasi di dunia teknologi.
+
+        Dengan kombinasi keahlian di bidang perangkat lunak, jaringan komputer, dan infrastruktur teknologi, tim ini berkomitmen untuk menciptakan solusi kreatif yang dapat memberikan dampak positif melalui inovasi teknologi. Keberagaman yang dimiliki menjadi kekuatan utama tim dalam menghadapai berbagai tantangan dan menciptakan karya yang luar biasa..</h2>
 
     <section id="intro" class="intro-section">
-        <h2>Intro</h2>
+        <h2>Introduction</h2>
         <div class="intro-container">
             <div class="intro-item">
                 <img src="images/person1.jpg" alt="Person 1">
                 <div class="intro-info">
-                    <h3>John Doe</h3>
-                    <p>Seorang pengembang perangkat lunak dengan pengalaman 10 tahun di industri teknologi...</p>
+                    <h3>Andi Reza</h3>
+                    <p>Blockchain Developer yang antusias dalam teknologi desentralisasi, memiliki pengalaman dalam pengembangan smart contract, DeFi, serta eksplorasi inovasi di dunia Web3..</p>
                 </div>
             </div>
 
             <div class="intro-item reverse">
                 <img src="images/person2.jpg" alt="Person 2">
                 <div class="intro-info">
-                    <h3>Jane Smith</h3>
-                    <p>Desainer UI/UX yang telah bekerja di berbagai startup besar dan memiliki passion dalam estetika
-                        digital...</p>
+                    <h3>Radithiya Andromeda Barito</h3>
+                    <p>Fullstack Web Developer yang berpengalaman dalam membangun aplikasi web modern, menguasai front-end dan back-end, serta memiliki semangat untuk menciptakan solusi digital inovatif...</p>
                 </div>
             </div>
 
             <div class="intro-item">
                 <img src="images/person3.jpg" alt="Person 3">
                 <div class="intro-info">
-                    <h3>Michael Johnson</h3>
-                    <p>Seorang ahli keamanan siber yang membantu perusahaan melindungi data sensitif mereka...</p>
+                    <h3>Alan Yahya</h3>
+                    <p>Ahli jaringan yang berdedikasi dalam merancang, mengoptimalkan, dan mengamankan infrastruktur jaringan untuk memastikan konektivitas yang handal dan efisien..</p>
                 </div>
             </div>
         </div>
@@ -81,16 +76,16 @@
     <section id="contact" class="contact">
         <div class="container-contact">
             <h2>Contact Us</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <input type="text" placeholder="Subject" required>
-                <textarea placeholder="Message" required></textarea>
+            <form id="contact-form">  <!-- Tambahkan ID -->
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Message" required></textarea>
                 <button type="submit" class="btn">Send Message</button>
             </form>
         </div>
     </section>
-
+    
 </body>
 
 </html>

@@ -10,6 +10,12 @@ body {
   color: #d6d6f7; /* Warna teks utama */
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* Navbar */
 .navbar {
   top: 0;
