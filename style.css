@@ -41,6 +41,7 @@ html {
 
 .navbar ul li {
   margin: 0;
+  font-style: bold;
 }
 
 .navbar ul li a {
@@ -56,8 +57,8 @@ html {
 }
 
 .navbar ul li a:hover {
-  color: #4dabf7;
-  border-color: #4dabf7; /* Efek border saat hover */
+  color:  #ff3d71;
+  border-color:  #ff3d71; /* Efek border saat hover */
 }
 
 
@@ -70,37 +71,7 @@ html {
   padding: 10px 0;
 }
 
-.navbar ul {
-  list-style: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px; /* Tambahkan jarak antar item */
-  padding: 0;
-  background-color: #2b253c;
-}
 
-.navbar ul li {
-  margin: 0 20px;
-}
-
-.navbar ul li a {
-  color: #d6d6f7;
-  text-decoration: none;
-  font-size: 18px;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-  padding: 12px 20px; /* Tambahkan padding agar lebih besar */
-  background: transparent; /* Hilangkan warna background */
-  border-radius: 8px; /* Tambahkan sedikit border-radius */
-  border: 2px solid transparent; /* Hindari border hitam */
-  background-color: #2b253c;
-}
-
-.navbar ul li a:hover {
-  color: #4dabf7;
-  border-color: #4dabf7; /* Efek border saat hover */
-}
 
 /* Main Titles */
 .main-title {
@@ -113,7 +84,7 @@ html {
 .motto {
   color: #4dabf7; /* Warna aksen biru muda */
   margin-left: 75px;
-  margin-top: 10px;
+
   font-style: italic;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 100;
@@ -137,8 +108,12 @@ html {
   margin-bottom: 80px;
   margin-left: 60px;
   margin-right: 60px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
 }
-
+.intro-section h2 {
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
 .intro-container {
   display: flex;
   flex-direction: column;
@@ -157,10 +132,25 @@ html {
 }
 
 .intro-item img {
-  width: 50%;
-  height: auto;
+  width: 20%;
+  height: 20%;
   border-radius: 10px;
+  margin: 50px;
+  transition: transform 0.3s ease, outline 0.3s ease;
 }
+
+.intro-item img:hover {
+  transform: scale(1.1); /* Membesarkan gambar */
+  outline: 3px solid  #ff3d71; /* Memberikan outline biru */
+  outline-offset: 2px; /* Jarak outline dari gambar */
+}
+
+.intro-item a {
+  color:white;
+  margin: 5px;
+  text-decoration: none;
+}
+
 
 .intro-info {
   width: 50%;
@@ -194,6 +184,7 @@ html {
   margin-bottom: 80px;
   margin-left: 60px;
   margin-right: 60px;
+  box-shadow: 0 7px 10px rgba(255, 255, 255, 0.4);
 }
 
 .project-grid {
@@ -223,10 +214,25 @@ html {
 }
 
 .project-item img {
-  width: 100px;
-  height: auto;
+  width: 200px;
+  height: 150px;
+  border-radius: 5px;
+  transition: transform 0.3s ease, outline 0.3s ease;
 }
 
+.project-item img:hover{
+  transform: scale(1.1); /* Membesarkan gambar */
+  outline: 3px solid  #ff3d71; /* Memberikan outline biru */
+  outline-offset: 2px; /* Jarak outline dari gambar */
+}
+
+.title-project {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.desc-project {
+  font-size: small;
+}
 /* Form */
 form {
   display: flex;
@@ -279,18 +285,24 @@ form button:hover {
   border-radius: 10px;
   margin-left: 60px;
   margin-right: 60px;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
   
 }
 
 .contact h2 {
   color: white;
   margin-bottom: 20px;
+  margin-top: -15px;
 }
 
 
 .container-contact {
   padding-bottom: 60px;
+}
+
+.container-projects h2{
+  margin-bottom: 20px;
+  margin-top:-10px;
 }
 
 #starsCanvas {
@@ -301,4 +313,75 @@ form button:hover {
   height: 100vh;
   pointer-events: none; /* Agar tidak mengganggu interaksi */
   z-index: -1; /* Supaya berada di belakang elemen lain */
+}
+.footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#imageModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Gambar modal */
+.modal-content {
+  max-width: 80%;
+  max-height: 80vh;
+  border-radius: 10px;
+  margin-top: 190px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Caption */
+#caption {
+  color: white;
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Tombol close */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close:hover {
+  color: #ff4c4c;
 }
